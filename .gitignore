@@ -2,8 +2,4 @@
 node_modules/
 
 # database
-<<<<<<< HEAD
 database.sqlite
-=======
-database.sqlite
->>>>>>> 9c89701f956f69e7240c84c97c9ac487d739f8d3
