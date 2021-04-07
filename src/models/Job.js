@@ -18,7 +18,7 @@ module.exports = {
   },
 
   async create(job) {
-    const db = await Databae();
+    const db = await Database();
 
     await db.run(`INSERT INTO jobs (
       name,
@@ -41,8 +41,7 @@ module.exports = {
     await db.run(`UPDATE jobs SET
       name = "${job.name}",
       daily_hours = ${job['daily-hours']},
-      total_hours = ${job['total-hours']},
-      created_at = ${job.created_at}
+      total_hours = ${job['total-hours']}
       WHERE id=${id}
     `);
 

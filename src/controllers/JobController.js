@@ -45,7 +45,7 @@ module.exports = {
     const updatedJob = {
       name: request.body.name,
       'total-hours': request.body['total-hours'],
-      'dayly-hours': request.body['daily-hours'],
+      'daily-hours': request.body['daily-hours'],
     }
 
     await Job.update(updatedJob, id);
